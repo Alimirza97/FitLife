@@ -1,0 +1,106 @@
+<div class="class1" >
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="card border-0 shadow rounded-3 my-5">
+        <div class="card-body p-4 p-sm-5" style="background-color: #e5dcbb">
+
+          <h5 class="card-title text-center mb-5 fw-light fs-5">{{ title }}</h5>
+
+          <form [formGroup]="_signupForm">
+
+            <div class="form-floating mb-3">
+              <input type="user"
+                     class="form-control"
+                     id="floatingUser"
+                     formControlName="username"
+                     placeholder="UserName">
+              <label for="floatingUser">User Name</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="password"
+                     class="form-control"
+                     id="floatingPassword"
+                     formControlName="password"
+                     placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="email"
+                     class="form-control"
+                     id="floatingEmail"
+                     formControlName="email"
+                     placeholder="name@example.com">
+              <label for="floatingEmail">Email address</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="string"
+                     class="form-control"
+                     id="floatingName"
+                     formControlName="firstName"
+                     placeholder="Name">
+              <label for="floatingName">First Name</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="string"
+                     class="form-control"
+                     id="floatingLastName"
+                     formControlName="lastName"
+                     placeholder="Last Name">
+              <label for="floatingLastName">Last Name</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="number"
+                     class="form-control"
+                     id="floatingAge"
+                     formControlName="age"
+                     placeholder="Age">
+              <label for="floatingAge">Age</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="number"
+                     class="form-control"
+                     id="floatingWeight"
+                     formControlName="weight"
+                     placeholder="Weight">
+              <label for="floatingWeight">Weight</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="number"
+                     class="form-control"
+                     id="floatingLenght"
+                     formControlName="length"
+                     placeholder="Lenght">
+              <label for="floatingLenght">Length</label>
+            </div>
+
+            <div class="form-select mb-3">
+              <label for="floatingGender">Gender</label>
+              <select id="floatingGender"
+                      class="form-control"
+                      formControlName="gender">
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+              </select>
+
+            </div>
+
+
+          </form>
+
+          <div class="d-grid">
+            <button class="btn btn-primary btn-signup text-uppercase fw-bold" type="submit" (click)="signUp()">Sign up</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

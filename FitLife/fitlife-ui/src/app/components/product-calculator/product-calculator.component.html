@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="col" >
+    <ng-container *ngIf="productList && productList.length > 0; else noProductFound">
+      <table>
+        <tr>
+          <th>Product Name</th>
+          <th>Calori</th>
+          <th>Fat</th>
+          <th>Carb</th>
+          <th>Pro</th>
+        </tr>
+        <br>
+        <tr *ngFor="let item of productList ">
+          <th>{{item.name}}</th>
+          <th>{{item.cal}}</th>
+          <th>{{item.fat}}</th>
+          <th>{{item.carb}}</th>
+          <th>{{item.pro}}</th>
+        </tr>
+        <br>
+        <tr>
+          <th>Total Calorie</th>
+          <th>{{productTotalCal}}</th>
+          <th>{{productTotalFat}}</th>
+          <th>{{productTotalCarb}}</th>
+          <th>{{productTotalPro}}</th>
+        </tr>
+      </table>
+    </ng-container>
+
+    <ng-template #noProductFound>
+      <div class="row">
+        <p class="text-center">There aren't any products</p>
+      </div>
+    </ng-template>
+  </div>
+</div>

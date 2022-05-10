@@ -1,0 +1,13 @@
+.mb-5{
+  color: blueviolet;
+  font-family: Arial;
+}
+
+.class1{
+  background-image: url("https://www.diyetkolik.com/site_media/media/customvideo_images/sirtfood.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+}

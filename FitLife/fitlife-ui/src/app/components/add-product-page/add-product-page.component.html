@@ -1,0 +1,77 @@
+<div class="class1" >
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="card border-0 shadow rounded-3 my-5">
+        <div class="card-body p-4 p-sm-5" style="background-color: #d2be6f">
+
+          <h5 class="card-title text-center mb-5 fw-light fs-5">{{ title }}</h5>
+
+          <form [formGroup]="_addProductForm">
+
+            <div class="form-floating mb-3">
+              <input type="string"
+                     class="form-control"
+                     id="floatingName"
+                     formControlName="name"
+                     placeholder="Product Name">
+              <label for="floatingName">Product Name</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="string"
+                     class="form-control"
+                     id="floatingImageURL"
+                     formControlName="imageURL"
+                     placeholder="Image URL">
+              <label for="floatingImageURL">Image URL</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="number"
+                     class="form-control"
+                     id="floatingCal"
+                     formControlName="cal"
+                     placeholder="Calories">
+              <label for="floatingCal">Calories</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="number"
+                     class="form-control"
+                     id="floatingCarb"
+                     formControlName="carb"
+                     placeholder="Carbs">
+              <label for="floatingCarb">Carbs</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="number"
+                     class="form-control"
+                     id="floatingFat"
+                     formControlName="fat"
+                     placeholder="Fat">
+              <label for="floatingFat">Fat</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="number"
+                     class="form-control"
+                     id="floatingAge"
+                     formControlName="pro"
+                     placeholder="Protein">
+              <label for="floatingAge">Protein</label>
+            </div>
+            <br>
+            <br>
+          </form>
+
+          <div class="d-grid">
+            <button class="btn btn-primary btn-signup mb-2 text-uppercase fw-bold" type="submit" (click)="addProduct()" >Add Product</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

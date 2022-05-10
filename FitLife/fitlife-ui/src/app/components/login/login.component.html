@@ -1,0 +1,54 @@
+<div class="class1" >
+  <br>
+<div class="container">
+  <div class="row" >
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="card border-0 shadow rounded-3 my-5">
+        <div class="card-body p-4 p-sm-5 mb-0 " style="background-color: #e5dcbb">
+
+          <h5 class="card-title text-center mb-5 fw-light fs-5">{{ title }}</h5>
+
+          <form [formGroup]="_loginForm">
+
+            <div class="form-floating mb-3">
+              <input type="user"
+                     class="form-control"
+                     id="floatingInput"
+                     formControlName="username"
+                     placeholder="UserName">
+              <label for="floatingInput">Username</label>
+            </div>
+            <br>
+            <div class="form-floating mb-3">
+              <input type="password"
+                     class="form-control"
+                     id="floatingPassword"
+                     formControlName="password"
+                     placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="form-floating mb-1 p-2 text-center ">
+              <a type="submit" (click)="account()">If you don't have a account click</a>
+
+            </div>
+            <br>
+          </form>
+
+          <div class="d-grid">
+            <button class="btn btn-primary btn-login text-uppercase fw-bold mb-2" type="submit" (click)="signIn()">Sign in</button>
+          </div>
+
+          <br>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <br>
+  <br>
+  <br>
+
+</div>

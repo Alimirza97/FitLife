@@ -1,0 +1,22 @@
+ <div class="card p-1"  *ngIf="productItem"  >
+    <img class="card-img-top" src="{{productItem.imageURL}}" alt="Card image cap"  height="200" >
+    <div class="card-body">
+      <h4 class="card-title">{{productItem.name}}</h4>
+      <button type="button" class="btn btn-primary btn-sm" (click)="sentProduct()">ADD</button>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li   class="list-group-item">Cal= {{productItem.cal}} </li>
+      <li  class="list-group-item">Carb= {{productItem.carb}} Fat= {{productItem.fat}}  Protein= {{productItem.pro}} </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+
+

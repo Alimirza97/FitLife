@@ -1,0 +1,17 @@
+
+<div class="container">
+  <div class="row" >
+    <ng-container *ngIf="productList &&  productList.length > 0; else noProductFound">
+      <div *ngFor="let item of productList " class="col-2 p-0">
+        <app-product-item [productItem]="item" (event) = "receiveMessage($event)"></app-product-item>
+       </div>
+    </ng-container>
+
+    <ng-template #noProductFound>
+      <div class="row">
+        <p class="text-center">There aren't any products in the database</p>
+      </div>
+    </ng-template>
+  </div>
+
+</div>

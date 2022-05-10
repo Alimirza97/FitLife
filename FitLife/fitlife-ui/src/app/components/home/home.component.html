@@ -1,0 +1,39 @@
+<body class="mb-0">
+
+<header class="container-fluid navbar-dark sticky-top flex-md-nowrap p-0 shadow">
+  <app-navbar> </app-navbar>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+
+      <div class="col-2  "> <app-new-sidebar></app-new-sidebar></div>
+      <div class="col-8 mb-3"> <app-product-list (event) = "receiveMessage($event)"> </app-product-list></div>
+      <div class="col-2 calc">
+          <app-product-calculator [productList] = "productItemModels" [productTotalCal]="productTotalCal" [productTotalCarb]="productTotalCarb" [productTotalFat]="productTotalFat" [productTotalPro]="productTotalPro"> </app-product-calculator>
+       </div>
+  </div>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

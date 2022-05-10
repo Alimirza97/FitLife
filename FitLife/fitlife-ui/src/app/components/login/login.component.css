@@ -1,0 +1,31 @@
+.class1{
+  background-image: url("https://www.probiyotix.com/wp-content/uploads/2020/06/Mikrobiyom_Mikrobiyota_Diyeti_Nedir_Nasil_Yapilir_Ne_Yenir-768x432.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100% ;
+
+
+}
+
+.mb-1{
+  color: blue;
+  font-family: Arial;
+  size: auto;
+
+}
+.mb-3{
+  background-color: cornsilk;
+}
+.mb-5{
+  color: blueviolet;
+  font-family: Arial;
+}
+.mb-0{
+
+}
+.mb-2{
+  background: #23c43e;
+  font-family: "Arial Rounded MT Bold";
+
+}
